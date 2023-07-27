@@ -1,0 +1,221 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://example.com/tekken_move_schema.json",
+    "title": "Tekken 7 Move",
+    "description": "A character's move in Tekken 7",
+    "type": "object",
+    "properties": {
+        "id": {
+            "description": "A unique identifier for the move, typically of the form {character fullname}-{move input}",
+            "type": "string"
+        },
+        "character": {
+            "description": "The character's full name to which this move",
+            "type": "string",
+            "enum": [
+                "Akuma",
+                "Alisa",
+                "Anna",
+                "Armor King",
+                "Asuka",
+                "Bob",
+                "Bryan",
+                "Claudio",
+                "Devil Jin",
+                "Dragunov",
+                "Eddy",
+                "Eliza",
+                "Fahkumram",
+                "Feng",
+                "Ganryu",
+                "Geese",
+                "Gigas",
+                "Heihachi",
+                "Hwoarang",
+                "Jack-7",
+                "Jin",
+                "Josie",
+                "Julia",
+                "Katarina",
+                "Kazumi",
+                "Kazuya",
+                "King",
+                "Kuma",
+                "Kunimitsu",
+                "Lars",
+                "Law",
+                "Lee",
+                "Lei",
+                "Leo",
+                "Leroy",
+                "Lidia",
+                "Lili",
+                "Lucky Chloe",
+                "Marduk",
+                "Master Raven",
+                "Miguel",
+                "Negan",
+                "Nina",
+                "Noctis",
+                "Paul",
+                "Shaheen",
+                "Steve",
+                "Xiaoyu",
+                "Yoshimitsu",
+                "Zafina"
+            ]
+        },
+        "name": {
+            "description": "The move's name",
+            "type": "string"
+        },
+        "lead": {
+            "description": "The ID of the lead move which precedes this move, if any",
+            "enum": [
+                "string",
+                "null"
+            ]
+        },
+        "input": {
+            "description": "The move's input using the style of wavu.wiki (https://wavu.wiki/t/Notation#Style)",
+            "type": "string"
+        },
+        "hitLevel": {
+            "description": "The hit level(s) of the move",
+            "type": [
+                {
+                    "type": "string",
+                    "enum": [
+                        "h",
+                        "m",
+                        "l",
+                        "sm"
+                    ]
+                },
+                {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "enum": [
+                            "h",
+                            "m",
+                            "l",
+                            "sm"
+                        ]
+                    },
+                    "minItems": 1
+                }
+            ]
+        },
+        "range": {
+            "description": "The maximum range recorded of the move hitting a Heihachi on-axis, using the value from the in-game frame display. Full details here: https://wavu.wiki/t/Movelist#Range",
+            "type": "number"
+        },
+        "tracksLeft": {
+            "description": "The tracking score of the move with the opponent stepping right (https://wavu.wiki/t/Tracking#Measurement)",
+            "type": "integer",
+            "maximum": 17,
+            "minimum": -6
+        },
+        "tracksRight": {
+            "description": "The tracking score of the move with the opponent stepping left (https://wavu.wiki/t/Tracking#Measurement)",
+            "type": "integer",
+            "maximum": 17,
+            "minimum": -6
+        },
+        "startup": {
+            "description": "The active frames of the attack",
+            "type": [
+                {
+                    "type": "integer",
+                    "minimum": 1
+                },
+                {
+                    "type": "array",
+                    "items": {
+                        "type": "integer",
+                        "minimum": 1
+                    },
+                    "minItems": 1,
+                    "maxItems": 2
+                }
+            ]
+        },
+        "recovery": {
+            "description": "The recovery frames of the move, and what stance (if any) the move recovers into",
+            "type": "object",
+            "properties": {
+                "advantage": {
+                    "type": "integer",
+                    "minimum": 1
+                },
+                "stance": {
+                    "description": "The stance that the move recovers into (written as an abbreviation)",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            }
+        },
+        "moveType": {
+            "description": "The type of the attack (at: attack, th: throw, ub: unblockable, st: stance movement)",
+            "type": "string",
+            "enum": [
+                "at",
+                "th",
+                "ub",
+                "st"
+            ]
+        },
+        "onHit": {
+            "description": "The move's properties on hit",
+            "type": "object",
+            "properties": {
+                "damage": {
+                    "type": "integer",
+                    "minimum": 1
+                },
+                "advantage": {
+                    "type": "integer"
+                }
+            }
+        },
+        "onBlock": {
+            "description": "The move's properties on block",
+            "type": "object",
+            "properties": {
+                "damage": {
+                    "type": "integer",
+                    "minimum": 1
+                },
+                "advantage": {
+                    "type": "integer"
+                }
+            }
+        },
+        "onCh": {
+            "description": "The move's properties on counterhit",
+            "type": "object",
+            "properties": {
+                "damage": {
+                    "type": "integer",
+                    "minimum": 1
+                },
+                "advantage": {
+                    "type": "integer"
+                }
+            }
+        },
+        "notes": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    },
+    "required": [
+        "id",
+        "input"
+    ]
+}
