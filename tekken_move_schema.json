@@ -10,7 +10,7 @@
             "type": "string"
         },
         "character": {
-            "description": "The character's full name to which this move",
+            "description": "The character's full name to which this move belongs",
             "type": "string",
             "enum": [
                 "Akuma",
@@ -66,7 +66,7 @@
             ]
         },
         "name": {
-            "description": "The move's name",
+            "description": "The move's name in the movelist",
             "type": "string"
         },
         "lead": {
@@ -75,6 +75,23 @@
                 "string",
                 "null"
             ]
+        },
+        "stanceRequired": {
+            "description": "The stance required to perform the move, if any",
+            "type": "object",
+            "properties": {
+                "stance": {
+                    "description": "The stance that the move requires (written as an abbreviation)",
+                    "enum": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "rage": {
+                    "description": "Whether the move requires rage to perform",
+                    "type": "boolean"
+                }
+            }
         },
         "input": {
             "description": "The move's input using the style of wavu.wiki (https://wavu.wiki/t/Notation#Style)",
@@ -150,7 +167,7 @@
                     "minimum": 1
                 },
                 "stance": {
-                    "description": "The stance that the move recovers into (written as an abbreviation)",
+                    "description": "The stance that attacker recovers in (written as an abbreviation)",
                     "type": [
                         "string",
                         "null"
@@ -173,12 +190,39 @@
             "type": "object",
             "properties": {
                 "damage": {
-                    "type": "integer",
-                    "minimum": 1
+                    "type": [
+                        {
+                            "type": "integer",
+                            "minimum": 1
+                        },
+                        {
+                            "type": "array",
+                            "items": {
+                                "type": "integer",
+                                "minimum": 1
+                            },
+                            "minItems": 1
+                        }
+                    ]
                 },
                 "advantage": {
                     "type": "integer"
-                }
+                },
+                "recovery": {
+                    "type": "object",
+                    "properties": {
+                        "advantage": {
+                            "type": "integer",
+                            "minimum": 1
+                        },
+                        "stance": {
+                            "description": "The stance that defender recovers in (written as an abbreviation)",
+                            "type": [
+                                "string",
+                                "null"
+                            ]
+                        }
+                    }
             }
         },
         "onBlock": {
@@ -191,6 +235,18 @@
                 },
                 "advantage": {
                     "type": "integer"
+                },
+                "recovery": {
+                    "type": "object",
+                    "properties": {
+                        "stance": {
+                            "description": "The stance that defender recovers in (written as an abbreviation)",
+                            "type": [
+                                "string",
+                                "null"
+                            ]
+                        }
+                    }
                 }
             }
         },
