@@ -21,3 +21,39 @@ tr:nth-child(even) {
 tr:nth-child(odd) {
     background-color: #ffffff;
 }
+
+/* Add styles for the expand/collapse arrows using CSS pseudoelements */
+.notes-button {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    display: inline-block;
+    background-color: #ccc;
+}
+
+.notes-button::before,
+.notes-button::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background-color: #333;
+    top: 9px;
+    left: 5px;
+    transition: transform 0.3s;
+}
+
+.notes-button::before {
+    transform: translateY(-2px);
+}
+
+.notes-button.expanded::before {
+    transform: translateY(0);
+    transform-origin: center;
+}
+
+.notes-button.expanded::after {
+    transform: translateY(0);
+    transform-origin: center;
+}
