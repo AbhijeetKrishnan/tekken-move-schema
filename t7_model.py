@@ -40,7 +40,7 @@ class State(BaseModel):
     )
 
 class AtkProp(BaseModel):
-    """Properties of an attack when upon its active frames connecting with an opponent"""
+    """Properties of an attack upon its active frames connecting with an opponent"""
 
     onHitState: HitStateEnum = Field(
         None,

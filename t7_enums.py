@@ -91,7 +91,7 @@ class StateEnum(enum.IntEnum):
     lc   = enum.auto() # low crush
     a    = enum.auto() # airborne (floating)
     pc   = enum.auto() # power crush
-    ps   = enum.auto() # parry state
+    ps   = enum.auto() # parry state TODO: this needs to include more details
     ra   = enum.auto() # rage armor
     ar   = enum.auto() # armor
     s    = enum.auto() # standing
@@ -113,7 +113,7 @@ class LimbEnum(enum.IntEnum):
 class HitStateEnum(enum.StrEnum):
     n = "n" # normal hit
     ch = "CH" # counter hit
-    cl = "CL" # clean hit
+    cl = "CL" # clean hit (but not CH)
 
 class ComboPropEnum(enum.IntFlag):
     splat = enum.auto() # wall splat
