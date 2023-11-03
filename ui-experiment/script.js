@@ -1,44 +1,47 @@
-document.getElementById('csvFile').addEventListener('change', handleFile);
+// Specify the path to your CSV file
+const csvFilePath = 'bryan-t8.csv';
 
-function handleFile(event) {
-    const file = event.target.files[0];
-    if (file) {
-        const reader = new FileReader();
-
-        reader.onload = function(e) {
-            const csvData = e.target.result;
+// Function to load the CSV file
+function loadCsvFile() {
+    fetch(csvFilePath)
+        .then(response => response.text())
+        .then(data => {
             const table = document.getElementById('table');
             table.innerHTML = ''; // Clear previous data
 
-            // Split CSV data into rows
-            const rows = csvData.split('\n');
+            const result = Papa.parse(data, {
+                header: true,
+                dynamicTyping: true
+            });
+            const propsRow = result.meta.fields;
+            const rows = result.data;
+            console.log(rows);
+
+            // Add table headers
+            const headerRow = table.createTHead();
+            propsRow.forEach((prop) => {
+                const th = document.createElement('th');
+                th.textContent = prop;
+                headerRow.appendChild(th);
+            });
 
             for (let i = 0; i < rows.length; i++) {
-                const row = rows[i].trim();
+                const row = rows[i];
                 if (row) {
-                    const cells = row.split(',');
-
                     // Create a new row in the table
                     const newRow = table.insertRow();
 
-                    for (let j = 0; j < cells.length; j++) {
+                    for (let j = 0; j < propsRow.length; j++) {
                         // Add cells to the row
                         const cell = newRow.insertCell(j);
-                        cell.textContent = cells[j];
-
-                        // Apply specific classes based on CSV column values
-                        if (j === 0) {
-                            cell.classList.add('column1-style'); // Add class for the first column
-                        } else if (j === 1) {
-                            cell.classList.add('column2-style'); // Add class for the second column
-                        }
-
-                        // You can add more conditions to apply classes to other columns as needed
+                        cell.textContent = row[propsRow[j]];
+                        cell.classList.add(propsRow[j]);
                     }
                 }
             }
-        };
-
-        reader.readAsText(file);
-    }
+        })
+        .catch(error => console.error('Error loading CSV file:', error));
 }
+
+// Call the function to load the CSV file when the page loads
+loadCsvFile();

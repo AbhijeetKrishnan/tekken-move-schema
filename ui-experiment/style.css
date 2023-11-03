@@ -21,14 +21,3 @@ tr:nth-child(even) {
 tr:nth-child(odd) {
     background-color: #ffffff;
 }
-
-/* Define styles for specific classes in each cell */
-.column1-style {
-    color: red; /* Example style for the first column */
-}
-
-.column2-style {
-    background-color: yellow; /* Example style for the second column */
-}
-
-/* You can add more classes and styles for other columns as needed */
