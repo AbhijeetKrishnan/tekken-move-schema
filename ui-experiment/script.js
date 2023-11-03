@@ -1,6 +1,10 @@
 // Specify the path to your CSV file
 const csvFilePath = 'bryan-t8.csv';
 
+// Define an array of column names to be hidden
+const columnsToHide = ['id', 'parent']; // Add the column names you want to hide
+const columnsToToggle = ['reach', 'tracksLeft', 'tracksRight', 'recv', 'tot', 'crush'];
+
 // Function to create an expandable area for notes
 function createNotesArea(notes) {
     const notesContainer = document.createElement('div');
@@ -29,26 +33,43 @@ function loadCsvFile() {
             });
             const propsRow = result.meta.fields;
             const rows = result.data;
-            console.log(rows);
+            // console.log(rows);
 
             // Add table headers
             const headerRow = table.createTHead();
-            propsRow.forEach((prop) => {
+            for (let j = 0; j < propsRow.length; j++) {
+                if (columnsToHide.includes(propsRow[j])) {
+                    continue;
+                }
+                if (columnsToToggle.includes(propsRow[j])) {
+                    if (!document.getElementById('toggleColumns').checked) {
+                        continue;
+                    }
+                }
+                let prop = propsRow[j];
                 const th = document.createElement('th');
                 th.textContent = prop;
                 th.classList.add(prop);
                 headerRow.appendChild(th);
-            });
+            }
 
             for (let i = 0; i < rows.length; i++) {
                 const row = rows[i];
                 if (row) {
                     // Create a new row in the table
                     const newRow = table.insertRow();
-
                     for (let j = 0; j < propsRow.length; j++) {
+                        if (columnsToHide.includes(propsRow[j])) {
+                            continue;
+                        }
+                        if (columnsToToggle.includes(propsRow[j])) {
+                            if (!document.getElementById('toggleColumns').checked) {
+                                continue;
+                            }
+                        }
+
                         // Add cells to the row
-                        const cell = newRow.insertCell(j);
+                        const cell = newRow.insertCell();
                         if (propsRow[j] === 'notes') {
                             const notesButton = document.createElement('div');
                             notesButton.className = 'notes-button';
@@ -77,6 +98,9 @@ function loadCsvFile() {
         })
         .catch(error => console.error('Error loading CSV file:', error));
 }
+
+// Add an event listener to the global toggle to control column visibility
+document.getElementById('toggleColumns').addEventListener('change', loadCsvFile);
 
 // Call the function to load the CSV file when the page loads
 loadCsvFile();

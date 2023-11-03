@@ -6,11 +6,13 @@
     <title>CSV File Viewer</title>
     <link rel="stylesheet" href="style.css"> <!-- Link the CSS file -->
     <script src="papaparse.min.js"></script>
-    <script src="script.js"></script>
 </head>
 <body>
     <h1>CSV File Viewer</h1>
-    <!-- Remove the file input and set the CSV file path -->
+    <input type="checkbox" id="toggleColumns">
+    <label for="toggleColumns">Toggle Advanced</label>
+
     <table id="table"></table>
+    <script src="script.js"></script>
 </body>
 </html>
