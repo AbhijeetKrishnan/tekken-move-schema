@@ -9,5 +9,5 @@
 
 <main>
 	<h1>{charName} Frame Data</h1>
-	<FrameDataDisplay data={data} />
+	<FrameDataDisplay {data} />
 </main>
