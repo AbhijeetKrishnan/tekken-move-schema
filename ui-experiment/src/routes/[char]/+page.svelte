@@ -4,14 +4,14 @@
 
 <main>
 	<h1>CSV Table Viewer</h1>
-	{#if data && data.props && data.props.data && data.props.header}
+	{#if data && data.csvData && data.csvHeader}
 		<table>
 			<tr>
-				{#each data.props.header as header}
+				{#each data.csvHeader as header}
 					<th>{header}</th>
 				{/each}
 			</tr>
-			{#each data.props.data as row, index}
+			{#each data.csvData as row, index}
 				<tr class={index % 2 === 0 ? 'even' : 'odd'}>
 					{#each Object.values(row) as value}
 						<td>{value}</td>

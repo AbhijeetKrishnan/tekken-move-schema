@@ -1,4 +1,5 @@
 import { error } from '@sveltejs/kit';
+import type { CsvData } from '../../types/csvData.type.js';
 
 import Papa from 'papaparse';
 
@@ -16,11 +17,9 @@ export async function load({ fetch, params }) {
 		const csvData = result.data as object[];
 
 		return {
-			props: {
-				data: csvData,
-				header: csvHeader
-			}
-		};
+			csvData: csvData,
+			csvHeader: csvHeader
+		} as CsvData;
 	} else {
 		throw error(response.status, 'Not found');
 	}
