@@ -1,4 +1,6 @@
+import type { Move } from './move.type';
+
 export type CsvData = {
-	csvData: object[];
+	csvData: Move[];
 	csvHeader: string[];
 };

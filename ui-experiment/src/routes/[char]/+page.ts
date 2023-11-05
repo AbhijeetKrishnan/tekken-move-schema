@@ -1,5 +1,6 @@
 import { error } from '@sveltejs/kit';
 import type { CsvData } from '../../types/csvData.type.js';
+import type { Move } from '../../types/move.type.js';
 
 import Papa from 'papaparse';
 
@@ -14,7 +15,7 @@ export async function load({ fetch, params }) {
 		});
 
 		const csvHeader = result.meta.fields;
-		const csvData = result.data as object[];
+		const csvData = result.data as Move[];
 
 		return {
 			csvData: csvData,
