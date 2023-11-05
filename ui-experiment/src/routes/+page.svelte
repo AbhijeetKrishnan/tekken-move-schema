@@ -1,49 +1,10 @@
 <script lang="ts">
-    export let data;
+	import { characters } from '../components/Characters.svelte';
 </script>
 
-<main>
-    <h1>CSV Table Viewer</h1>
-    {#if data && data.props && data.props.data && data.props.header}
-        <table>
-            <tr>
-                {#each data.props.header as header}
-                    <th>{header}</th>
-                {/each}
-            </tr>
-            {#each data.props.data as row, index}
-                <tr class={index % 2 === 0 ? 'even' : 'odd'}>
-                    {#each Object.entries(row) as [key, value]}
-                        <td>{value}</td>
-                    {/each}
-                </tr>
-            {/each}
-        </table>
-    {/if}
-</main>
-
-<style>
-	/* Base styles for the table cells */
-    table {
-        border-collapse: collapse;
-        width: 100%;
-    }
-
-    th, td {
-        border: 1px solid #aaa;
-        padding: 8px;
-        text-align: left;
-    }
-
-    th {
-        background-color: #70707075;
-    }
-
-    tr:nth-child(even) {
-        background-color: #f2f2f2;
-    }
-
-    tr:nth-child(odd) {
-        background-color: #ffffff;
-    }
-</style>
+<h1>Characters</h1>
+<ol>
+	{#each Object.entries(characters) as [char_key, char_name]}
+		<li><a href="/{char_key}">{char_name}</a></li>
+	{/each}
+</ol>
