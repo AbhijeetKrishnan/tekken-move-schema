@@ -1,0 +1,374 @@
+id,name,input,parent,damage,target,reach,tracksLeft,tracksRight,startup,recv,tot,crush,block,hit,ch,notes
+Bryan-1,Jab,1,,5,h,,,,i10,,,,+1,+8,,
+Bryan-1+2,,1+2,,15,m,,,,i17~18,,,,-7,+6,,"&lt;div
+  style=&quot;display: block; border-width: 0 0 0 0.5em; padding-left: 0.2em; border-style: solid;&quot;
+  class=&quot;movedata-icon border-blue homing&quot;
+&gt;Homing&lt;/div&gt;"
+"Bryan-1,2","Left Right Combo",",2",Bryan-1,",8",",h",,,,",i12",,,,-3,+8,+9,"Combo from 1st hit"
+"Bryan-1+2,1","Snake Bite",",1",Bryan-1+2,",15",",h",,,,",i23~24",,,,-1,+6,,"&lt;div class=&quot;plainlist&quot;&gt;
+* Combo from 1st hit
+* Transition to Sway with B +7 on hit&lt;/div&gt;"
+"Bryan-1,2,1","One Two Body Blow",",1","Bryan-1,2",",18",",m",,,,",i19",,,,-6,+6,"[[Bryan combos#Staples|+64a]]",
+"Bryan-1+2,2","Snake Pit",",2",Bryan-1+2,",20",",m",,,,",i26~27",,,,-14,"+51d (+20)",,"&lt;div class=&quot;plainlist&quot;&gt;
+* Combo from 1st hit with delay&lt;/div&gt;"
+"Bryan-1,2,3","One Two Low Kick",",3","Bryan-1,2",",15",",L",,,,",i24",,,,-12,+2,"[[Bryan combos#Mini-combos|+14d]]","Combo from 1st and 2nd CH"
+Bryan-1+2+3+4,"Ki Charge",1+2+3+4,,,,,,,,,,,,,,"&lt;div class=&quot;plainlist&quot;&gt;
+* Cannot block while still in effect
+* Automatic counter hit&lt;/div&gt;"
+"Bryan-1,2,4","One Two Neck Breaker",",4","Bryan-1,2",",24",",h",,,,",i20",,,,-5,"+20a (+11)",,"&lt;div class=&quot;plainlist&quot;&gt;
+* 
+&lt;div
+  style=&quot;display: block; border-width: 0 0 0 0.5em; padding-left: 0.2em; border-style: solid;&quot;
+  class=&quot;movedata-icon border-blue heat&quot;
+&gt;Heat Engager&lt;/div&gt;&lt;/div&gt;"
+Bryan-1+3,"Gravity Brain Buster",1+3,,35,t,,,,i12~14,,,,,-2d,,"&lt;div class=&quot;plainlist&quot;&gt;
+* 
+&lt;div
+  style=&quot;display: block; border-width: 0 0 0 0.5em; padding-left: 0.2em; border-style: solid;&quot;
+  class=&quot;movedata-icon border-yellow floor-break&quot;
+&gt;Floor break&lt;/div&gt;
+* Throw break 1 or 2&lt;/div&gt;"
+Bryan-1+3+4,Taunt,1+3+4,,0,m!,,,,i28~31,"r SE",,,,"[[Bryan combos#Staples|+16]]",,
+"Bryan-1,4",,",4",Bryan-1,",14",",h",,,,",i15",,,,-7,+4,,"Combo from 1st hit"
+"Bryan-1,4,2",,",2","Bryan-1,4",",18",",h",,,,",i24",,,,-7,+4,"[[Bryan combos#Staples|+53a]]","&lt;div class=&quot;plainlist&quot;&gt;
+* Cancel last hit into 1,4,2,1 with f+1
+* Cancel last hit into 1,4,2,4 with f+4
+* Alternate input b+2&lt;/div&gt;"
+"Bryan-1,4,2,1",,",1","Bryan-1,4,2",",16",",h",,,,",i19",,,,+0,"[[Bryan combos#Staples|+55a]]",,"&lt;div class=&quot;plainlist&quot;&gt;
+* Cancel last hit and transition to SS with u_d
+* Transition to CD with F
+* Alternate input:
+** b+2,1
+** qcf+4,1&lt;/div&gt;"
+"Bryan-1,4,2,1,2","Lair's Dance",",2","Bryan-1,4,2,1",",22",",h",,,,",i24",,,,-8,"+41d (-17)",,"&lt;div class=&quot;plainlist&quot;&gt;
+* 
+&lt;div
+  style=&quot;display: block; border-width: 0 0 0 0.5em; padding-left: 0.2em; border-style: solid;&quot;
+  class=&quot;movedata-icon border-green balcony-break&quot;
+&gt;Balcony break&lt;/div&gt;
+* Alternate input:
+** b+2,1,2
+** qcf+4,1,2&lt;/div&gt;"
+"Bryan-1,4,2,1,4",Cremation,",4","Bryan-1,4,2,1",",21",",m",,,,",i30-31",,,,-5,"+40a (+14)",,"&lt;div class=&quot;plainlist&quot;&gt;
+* 
+&lt;div
+  style=&quot;display: block; border-width: 0 0 0 0.5em; padding-left: 0.2em; border-style: solid;&quot;
+  class=&quot;movedata-icon border-red tornado&quot;
+&gt;Tornado&lt;/div&gt;
+* Alternate input:
+** b+2,1,4
+** qcf+4,1,4
+* Special? effect on airborne hit +38a (+31)&lt;/div&gt;"
+"Bryan-1,4,2,4","Whipping Fury",",4","Bryan-1,4,2",",21",",m",,,,,,,,,,,"&lt;div class=&quot;plainlist&quot;&gt;
+* 
+&lt;div
+  style=&quot;display: block; border-width: 0 0 0 0.5em; padding-left: 0.2em; border-style: solid;&quot;
+  class=&quot;movedata-icon border-green balcony-break&quot;
+&gt;Balcony break&lt;/div&gt;
+* Alternate input b+2,4&lt;/div&gt;"
+"Bryan-1,4,3","Jab &gt; Double Spin Kick",",3","Bryan-1,4",",15",",m",,,,",i21",,,,-10,+1,,
+"Bryan-1,4,3,3","Running Blind",",3","Bryan-1,4,3",",18",",h",,,,",i23",,,,-7,+7,+14d,"Combo from 3rd hit"
+Bryan-2,,2,,10,h,,,,i10,,,,+1,+7,,
+Bryan-2+3,"Heat Burst",2+3,,"12 (12)",m,,,,i16,,,pc,+1,+2c,,"&lt;div class=&quot;plainlist&quot;&gt;
+* 
+&lt;div
+  style=&quot;display: block; border-width: 0 0 0 0.5em; padding-left: 0.2em; border-style: solid;&quot;
+  class=&quot;movedata-icon border-blue heat&quot;
+&gt;Heat Burst&lt;/div&gt;&lt;/div&gt;"
+"Bryan-2,3","PK Combination",",3",Bryan-2,",14",",m",,,,",i16",,,,-10,+6,"+16a (+7)","&lt;div class=&quot;plainlist&quot;&gt;
+* Combo from 1st hit
+* CH frames also apply to combo from 1st CH&lt;/div&gt;"
+Bryan-2+4,Guillotine,2+4,,35,t,,,,i12~14,,,,,+0d,,"&lt;div class=&quot;plainlist&quot;&gt;
+* 
+&lt;div
+  style=&quot;display: block; border-width: 0 0 0 0.5em; padding-left: 0.2em; border-style: solid;&quot;
+  class=&quot;movedata-icon border-yellow floor-break&quot;
+&gt;Floor break&lt;/div&gt;
+* Throw break 1 or 2
+* Side switch&lt;/div&gt;"
+Bryan-3,"Mid Kick",3,,14,m,,,,i16,,,,-4,+7,,
+"Bryan-3,2",,",2",Bryan-3,",11",",m",,,,",i22",,,,-10,+1,,"Combo from 1st CH"
+"Bryan-3,2,1",,",1","Bryan-3,2",",10",",m",,,,",i20",,,,-9,+2,,"Combo from 2nd hit"
+"Bryan-3,2,1,2","Mid Kick &gt; Rush",",2","Bryan-3,2,1",",14",",m",,,,",i20",,,,-10,"+14a (+10)",,"&lt;div
+  style=&quot;display: block; border-width: 0 0 0 0.5em; padding-left: 0.2em; border-style: solid;&quot;
+  class=&quot;movedata-icon border-green balcony-break&quot;
+&gt;Balcony break&lt;/div&gt;"
+"Bryan-3,2,1,4","Gatling Combination",",4","Bryan-3,2,1",",12",",L",,,,",i22",,,,-11,+0,,
+"Bryan-3,3",,",3",Bryan-3,",13",",h",,,,",i23",,,,-6,+6,,
+"Bryan-3,3,2","Anaconda Bite",",2","Bryan-3,3",",20",",h",,,,",i22~23",,,,-7,"[[Bryan combos#Staples|+43 (+33)]]",,"&lt;div
+  style=&quot;display: block; border-width: 0 0 0 0.5em; padding-left: 0.2em; border-style: solid;&quot;
+  class=&quot;movedata-icon border-red tornado&quot;
+&gt;Tornado&lt;/div&gt;"
+"Bryan-3,3,4","Anaconda Rage",",4","Bryan-3,3",",25",",h",,,,",i28",,,,-12,"+37d (-21)",,"&lt;div
+  style=&quot;display: block; border-width: 0 0 0 0.5em; padding-left: 0.2em; border-style: solid;&quot;
+  class=&quot;movedata-icon border-green balcony-break&quot;
+&gt;Balcony break&lt;/div&gt;"
+Bryan-3+4,"Middle Side Kick",3+4,,20,m,,,,i18,,,,-13,+8,"[[Bryan combos#Staples|+59a]]",
+"Bryan-3+4,SE.2","Neo Soul Eraser",",SE.2",Bryan-3+4,",20",",m",,,,i14~15,,,,-1,"+35a (+9)",,"&lt;div class=&quot;plainlist&quot;&gt;
+* Combo from 1st hit
+* Consumes SE
+* Chip damage 8 (40%) on block&lt;/div&gt;"
+"Bryan-3+4,SE.2*","Neo Soul Eraser Exceed",",SE.2*",Bryan-3+4,",30",",m",,,,i55~56,,,,+9,"[[Bryan combos#Staples|+66a (+50)]]",,"&lt;div class=&quot;plainlist&quot;&gt;
+* 
+&lt;div
+  style=&quot;display: block; border-width: 0 0 0 0.5em; padding-left: 0.2em; border-style: solid;&quot;
+  class=&quot;movedata-icon border-red tornado&quot;
+&gt;Tornado&lt;/div&gt;
+* 
+&lt;div
+  style=&quot;display: block; border-width: 0 0 0 0.5em; padding-left: 0.2em; border-style: solid;&quot;
+  class=&quot;movedata-icon border-green balcony-break&quot;
+&gt;Balcony break&lt;/div&gt;
+* Consumes SE
+* Chip damage on block
+* Guard break at the wall
+* Insta Tornado launcher&lt;/div&gt;"
+Bryan-4,,4,,15,h,,,,i12,,,,-7,+6,,
+"Bryan-4,3",,",3",Bryan-4,",12",",m",,,,",i24~25",,,,-10,+2,,"Combo from 1st hit"
+"Bryan-4,3,4","Double Spin Tomahawk",",4","Bryan-4,3",",16",",m",,,,",i24~25",,,,-10,+2,,"&lt;div class=&quot;plainlist&quot;&gt;
+* 
+&lt;div
+  style=&quot;display: block; border-width: 0 0 0 0.5em; padding-left: 0.2em; border-style: solid;&quot;
+  class=&quot;movedata-icon border-green balcony-break&quot;
+&gt;Balcony break&lt;/div&gt;
+* Hold to power up and deal more chip damage on block&lt;/div&gt;"
+"Bryan-4,3,f+4","Triple Spin Kick",",f+4","Bryan-4,3",",18",",h",,,,",24~25",,,,-5,+6,"[[Bryan combos#Staples|+31a (+21)]]","Combo from 2nd CH"
+Bryan-b+1,"Chopping Elbow",b+1,,21,m,,,,i20~21,,,,+4,+7c,"[[Bryan combos#Staples|+78a (+58)]]","&lt;div
+  style=&quot;display: block; border-width: 0 0 0 0.5em; padding-left: 0.2em; border-style: solid;&quot;
+  class=&quot;movedata-icon border-teal tip&quot;
+&gt;Elbow&lt;/div&gt;"
+Bryan-b+1+3,Parry,b+1+3,,,,,,,,,,ps,,,,"&lt;div class=&quot;plainlist&quot;&gt;
+* Alternate input b+2+4&lt;/div&gt;"
+Bryan-b+1+4,"Gravity Blow",b+1+4,,26,m,,,,i28,,,,-9,+7c,,
+Bryan-b+1+4*,"Meteor Smash",b+1+4*,,45,m!,,,,i53,,,,,+7a,,
+Bryan-b+2,,b+2,,18,h,,,,,,,,,,,"&lt;div class=&quot;plainlist&quot;&gt;
+* Cancel into b+2,1 with f+1
+* Cancel into b+2,4 with f+4
+* Alternate input 1,4,2&lt;/div&gt;"
+"Bryan-b+2,1",,",1",Bryan-b+2,",16",",h",,,,,,,,,,,"&lt;div class=&quot;plainlist&quot;&gt;
+* Cancel last hit and transition to SS with u_d
+* Transition to CD with F
+* Alternate input:
+** 1,4,2,1
+** qcf+4,1&lt;/div&gt;"
+"Bryan-b+2,1,2","Hands of Doom",",2","Bryan-b+2,1",",22",",h",,,,,,,,,,,"&lt;div class=&quot;plainlist&quot;&gt;
+* 
+&lt;div
+  style=&quot;display: block; border-width: 0 0 0 0.5em; padding-left: 0.2em; border-style: solid;&quot;
+  class=&quot;movedata-icon border-green balcony-break&quot;
+&gt;Balcony break&lt;/div&gt;
+* Alternate input:
+** 1,4,2,1,2
+** qcf+4,1,2&lt;/div&gt;"
+"Bryan-b+2,1,4","Kickass Combo",",4","Bryan-b+2,1",",20",",m",,,,,,,,,,,"&lt;div class=&quot;plainlist&quot;&gt;
+* 
+&lt;div
+  style=&quot;display: block; border-width: 0 0 0 0.5em; padding-left: 0.2em; border-style: solid;&quot;
+  class=&quot;movedata-icon border-red tornado&quot;
+&gt;Tornado&lt;/div&gt;
+* Alternate input:
+** 1,4,2,4
+** qcf+4,1,4&lt;/div&gt;"
+"Bryan-b+2,4","Wolf Call",",4",Bryan-b+2,",21",",m",,,,,,,,,,,"&lt;div class=&quot;plainlist&quot;&gt;
+* 
+&lt;div
+  style=&quot;display: block; border-width: 0 0 0 0.5em; padding-left: 0.2em; border-style: solid;&quot;
+  class=&quot;movedata-icon border-green balcony-break&quot;
+&gt;Balcony break&lt;/div&gt;
+* Alternate input 1,4,2,4&lt;/div&gt;"
+Bryan-b+3,,b+3,,12,m,,,,i19,,,,-7,+4,,"Transition to CD with F +17 on hit"
+"Bryan-b+3,1+2","Front Kick &gt; Double Hammer",",1+2",Bryan-b+3,",25",",m",,,,",i22",,,,-8,+4c,"[[Bryan combos#Staples|+20d]]","Combo from 1st CH with delay"
+"Bryan-b+3,2",,",2",Bryan-b+3,",12",",h",,,,",i16",,,,-4,+7,,
+"Bryan-b+3,2,1",,",1","Bryan-b+3,2",",10",",m",,,,,,,,,,,"&lt;div class=&quot;plainlist&quot;&gt;
+* Combo from 2nd hit
+* Alternate input 3,2,1&lt;/div&gt;"
+"Bryan-b+3,2,1,2","Front Kick &gt; Rush",",2","Bryan-b+3,2,1",",14",",m",,,,,,,,,,,"&lt;div class=&quot;plainlist&quot;&gt;
+* Alternate input 3,2,1,2&lt;/div&gt;"
+"Bryan-b+3,2,1,4","Run for Cover",",4","Bryan-b+3,2,1",",12",",L",,,,,,,,,,,"&lt;div class=&quot;plainlist&quot;&gt;
+* Alternate input 3,2,1,4&lt;/div&gt;"
+Bryan-b+4,"Knee Break",b+4,,18,m,,,,i16,,,,-10,"[[Bryan combos#Mini-combos|+15]]",,"&lt;div
+  style=&quot;display: block; border-width: 0 0 0 0.5em; padding-left: 0.2em; border-style: solid;&quot;
+  class=&quot;movedata-icon border-teal tip&quot;
+&gt;Knee&lt;/div&gt;"
+"Bryan-Back throw","Neck throw","Back throw",,60,t,,,,,,,,,-1d,,
+"Bryan-b,B+4","Flying Knee Kick","b,B+4",,24,M,,,,i21~33,FUFT,,,-19,-7,,
+"Bryan-b,df+4","Wedge Driver","b,df+4",,25,l,,,,i29,,,,-13,+14g,,"&lt;div class=&quot;plainlist&quot;&gt;
+* Cancel with B&lt;/div&gt;"
+Bryan-d+1+2,,d+1+2,,"10,15","m,m",,,,i17,,,,-10,+3,,"&lt;div class=&quot;plainlist&quot;&gt;
+* Combo from 1st hit
+* Transition to CD with F +10g on hit
+* Transition to Sway with B +8&lt;/div&gt;"
+Bryan-d+1+2~2,"Snake Bomb",d+1+2~2,,24,m,,,,i30,,,,+7,"[[Bryan combos#Staples|+53a]]",,"Chip damage on block"
+"Bryan-d+1+2,3","Hammer Driver Hatchet",",3",Bryan-d+1+2,",20",",l",,,,i27~28,,,,-13,+5,"[[Bryan combos#Mini-combos|+25a]]",
+Bryan-d+2,,d+2,,17,m,,,,i14~15,,,,-2,+8c,,"&lt;div
+  style=&quot;display: block; border-width: 0 0 0 0.5em; padding-left: 0.2em; border-style: solid;&quot;
+  class=&quot;movedata-icon border-teal tip&quot;
+&gt;Elbow&lt;/div&gt;"
+"Bryan-d+2,3","Python Crush",",3",Bryan-d+2,",21",",m",,,,i22,,,,-10,"+16a (-1)","[[Bryan combos#Staples|+32a (+18)]]","&lt;div class=&quot;plainlist&quot;&gt;
+* 
+&lt;div
+  style=&quot;display: block; border-width: 0 0 0 0.5em; padding-left: 0.2em; border-style: solid;&quot;
+  class=&quot;movedata-icon border-green balcony-break&quot;
+&gt;Balcony break&lt;/div&gt;&lt;/div&gt;"
+Bryan-d+3,,d+3,,10,l,,,,i16,,,,-11,+0,,
+"Bryan-d+3,2","Quick Low Screw Punch &gt; Snake Eyes",",2",Bryan-d+3,",22",",h",,,,i21,,,,-7,"+35a (+9)",,"&lt;div class=&quot;plainlist&quot;&gt;
+* 
+&lt;div
+  style=&quot;display: block; border-width: 0 0 0 0.5em; padding-left: 0.2em; border-style: solid;&quot;
+  class=&quot;movedata-icon border-green balcony-break&quot;
+&gt;Balcony break&lt;/div&gt;
+* Gain SE on hit with 1+2&lt;/div&gt;"
+Bryan-d+3+4,,d+3+4,,16,l,,,,i19,,,,-12,-1,,
+"Bryan-d+3+4,2","Side Low Knuckle Whip",",2",Bryan-d+3+4,",25",",m",,,,",i19",,,,-12,"+14a (-3)",,"&lt;div class=&quot;plainlist&quot;&gt;
+* 
+&lt;div
+  style=&quot;display: block; border-width: 0 0 0 0.5em; padding-left: 0.2em; border-style: solid;&quot;
+  class=&quot;movedata-icon border-green balcony-break&quot;
+&gt;Balcony break&lt;/div&gt;
+* 
+&lt;div
+  style=&quot;display: block; border-width: 0 0 0 0.5em; padding-left: 0.2em; border-style: solid;&quot;
+  class=&quot;movedata-icon border-red tornado&quot;
+&gt;Tornado&lt;/div&gt;&lt;/div&gt;"
+Bryan-d+4,"Low Kick",d+4,,13,L,,,,i15,,,,-11,+0,,
+Bryan-db+1+2,"Crash Impact",db+1+2,,"8,16","m,h",,,,i15,,,,-9,+4,,"&lt;div class=&quot;plainlist&quot;&gt;
+* 
+&lt;div
+  style=&quot;display: block; border-width: 0 0 0 0.5em; padding-left: 0.2em; border-style: solid;&quot;
+  class=&quot;movedata-icon border-blue heat&quot;
+&gt;Heat Engager&lt;/div&gt;
+* Heat Dash +43a (+35)&lt;/div&gt;"
+Bryan-db+2,"Stomach Blow",db+2,,13,m,,,,i15~17,,,,-6,+8,,
+Bryan-db+3,"Sweeper kick",db+3,,11,L,,,,i16~17,,,,-12,-1,+4,
+Bryan-DF+1,,DF+1,,8,m,,,,i15,,,,-5,+1,,"&lt;div class=&quot;plainlist&quot;&gt;
+* Alternate input df+1
+* DF+1,1... extension available only with DF+1 input, not df+1&lt;/div&gt;"
+"Bryan-DF+1,1",,",1",Bryan-DF+1,",2",",m",,,,",i10",,,,-10,-4,,"Combo from 1st hit"
+"Bryan-DF+1,1,1",,",1","Bryan-DF+1,1",",2",",m",,,,",i10",,,,-10,-4,,"Combo from 1st hit"
+"Bryan-DF+1,1,1,1","Vulcan Cannon",",1","Bryan-DF+1,1,1",",2",",m",,,,",i10",,,,-10,-4,,"Combo from 1st hit"
+"Bryan-df+1,2","Double Body Blow",",2",Bryan-DF+1,",20",",m",,,,",i23",,,,-15,+1,"+14a (+5)","&lt;div class=&quot;plainlist&quot;&gt;
+* Combo from 1st hit
+* Alternate input:
+** DF+1,2
+** DF+1,1,2
+** DF+1,1,1,2
+** DF+1,1,1,1,2
+* Wall Break on CH&lt;/div&gt;"
+Bryan-df+2,,df+2,,12,m,,,,i13,,,,-6,+5,,"&lt;div
+  style=&quot;display: block; border-width: 0 0 0 0.5em; padding-left: 0.2em; border-style: solid;&quot;
+  class=&quot;movedata-icon border-teal tip&quot;
+&gt;Elbow&lt;/div&gt;"
+"Bryan-df+2,1","Blackout Combo",",1",Bryan-df+2,",11",",h",,,,i6,,,,-4,+5,,"&lt;div class=&quot;plainlist&quot;&gt;
+* Combo from 1st hit
+* Transition to Sway with B +8 on hit&lt;/div&gt;"
+"Bryan-df+2,3","Blackout Trap",",3",Bryan-df+2,",20",",m",,,,",i23",,,,-13,+8,"[[Bryan combos#Staples|+59a]]",
+Bryan-df+3,"Snake Edge",df+3,,20,L,,,,i29~30,,,,-26,"[[Bryan combos#Staples|+70a (+54)]]",,"&lt;div class=&quot;plainlist&quot;&gt;
+* 
+&lt;div
+  style=&quot;display: block; border-width: 0 0 0 0.5em; padding-left: 0.2em; border-style: solid;&quot;
+  class=&quot;movedata-icon border-blue homing&quot;
+&gt;Homing&lt;/div&gt;
+* Insta Tornado launch&lt;/div&gt;"
+Bryan-df+4,"Wolf's Tail",df+4,,23,m,,,,i22~24,,,,-6,"[[Bryan combos#Mini-combos|+19d]]",,"&lt;div class=&quot;plainlist&quot;&gt;
+* 
+&lt;div
+  style=&quot;display: block; border-width: 0 0 0 0.5em; padding-left: 0.2em; border-style: solid;&quot;
+  class=&quot;movedata-icon border-blue homing&quot;
+&gt;Homing&lt;/div&gt;&lt;/div&gt;"
+Bryan-f+1+2,"Sidestep Elbow",f+1+2,,22,h,,,,i20~21,,,pc,-6,"+44d (-14)",,"&lt;div class=&quot;plainlist&quot;&gt;
+* 
+&lt;div
+  style=&quot;display: block; border-width: 0 0 0 0.5em; padding-left: 0.2em; border-style: solid;&quot;
+  class=&quot;movedata-icon border-green balcony-break&quot;
+&gt;Balcony break&lt;/div&gt;
+* 
+&lt;div
+  style=&quot;display: block; border-width: 0 0 0 0.5em; padding-left: 0.2em; border-style: solid;&quot;
+  class=&quot;movedata-icon border-teal tip&quot;
+&gt;Elbow&lt;/div&gt;
+* Absorb an attack to power up and deal more chip damage on block&lt;/div&gt;"
+Bryan-f+2,,f+2,,10,m,,,,i15,,,,-10,+,,
+"Bryan-f+2,1",,",1",Bryan-f+2,",12",",m",,,,",i10",,,,-10,+1,,"Combo from 1st hit"
+"Bryan-f+2,1,4","Right Left &gt; Spin Kick &gt; Snake Eyes",",4","Bryan-f+2,1",",20",",m",,,,i18~19,,,,-13,+3a,,"&lt;div class=&quot;plainlist&quot;&gt;
+* Combo from 1st hit
+* Gain SE on hit with 1+2&lt;/div&gt;"
+"Bryan-f+2,1,SE.2",,",SE.2","Bryan-f+2,1",",5",",m",,,,i14~15,,,,-12,+3c,,"&lt;div class=&quot;plainlist&quot;&gt;
+* 
+&lt;div
+  style=&quot;display: block; border-width: 0 0 0 0.5em; padding-left: 0.2em; border-style: solid;&quot;
+  class=&quot;movedata-icon border-teal tip&quot;
+&gt;Elbow&lt;/div&gt;
+* Combo from 1st hit
+* Consumes SE
+* Chip damage 1 (20%) on block&lt;/div&gt;"
+"Bryan-f+2,1,SE.2,3",,",3","Bryan-f+2,1,SE.2",",7",",m",,,,",i22",,,,-15,"+14a (+7)",,"&lt;div class=&quot;plainlist&quot;&gt;
+* 
+&lt;div
+  style=&quot;display: block; border-width: 0 0 0 0.5em; padding-left: 0.2em; border-style: solid;&quot;
+  class=&quot;movedata-icon border-teal tip&quot;
+&gt;Knee&lt;/div&gt;
+* Combo from 1st hit
+* Chip damage 2 (28%) on block&lt;/div&gt;"
+"Bryan-f+2,1,SE.2,3,2",,",2","Bryan-f+2,1,SE.2,3",",20",",m",,,,",i35~36",,,,-10,"+0a (-1)",,"&lt;div class=&quot;plainlist&quot;&gt;
+* Chip damage 8 (40%) on block&lt;/div&gt;"
+Bryan-f+3,"Knee Strike",f+3,,18,m,,,,i16~18,,,,+0,+4,"[[Bryan combos#Staples|+50a]]","&lt;div
+  style=&quot;display: block; border-width: 0 0 0 0.5em; padding-left: 0.2em; border-style: solid;&quot;
+  class=&quot;movedata-icon border-teal tip&quot;
+&gt;Knee&lt;/div&gt;"
+Bryan-f+4,,f+4,,10,m,,,,i18,,,,-9,+0,,
+"Bryan-f+4,1","Boa Crusher",",1",Bryan-f+4,",10",",m",,,,i25~26,,,,-13c,"[[Bryan combos#Staples|+40a (+32)]]",,"Combo from 1st hit"
+Bryan-FC.db+1+2,"Chains of Misery",FC.db+1+2,,45,t,,,,i11,,,,,+1d,,"&lt;div class=&quot;plainlist&quot;&gt;
+* Throw break 1+2&lt;/div&gt;"
+Bryan-FC.df+2,,FC.df+2,,12,m,,,,i13,,,,-9,+4,,
+"Bryan-FC.df+2,1","Snake Rampage",",1",Bryan-FC.df+2,",25",",h",,,,i22~23,,,,-8,"+34a (+8)",,"&lt;div class=&quot;plainlist&quot;&gt;
+* 
+&lt;div
+  style=&quot;display: block; border-width: 0 0 0 0.5em; padding-left: 0.2em; border-style: solid;&quot;
+  class=&quot;movedata-icon border-green balcony-break&quot;
+&gt;Balcony break&lt;/div&gt;
+* Combo from 1st hit with delay
+* Move can be delayed&lt;/div&gt;"
+Bryan-FC.df+4,"Northern Cross",FC.df+4,,21,m,,,,i15~16,,,cs1~,-10,"[[Bryan combos#Wall|+13g]]",,"Ballerina spin on hit"
+"Bryan-f,F+2","Mach Breaker","f,F+2",,29,h,,,,i13,,,,-9,"+41d (-17)",,"&lt;div class=&quot;plainlist&quot;&gt;
+* 
+&lt;div
+  style=&quot;display: block; border-width: 0 0 0 0.5em; padding-left: 0.2em; border-style: solid;&quot;
+  class=&quot;movedata-icon border-blue heat&quot;
+&gt;Heat Engager&lt;/div&gt;
+* 
+&lt;div
+  style=&quot;display: block; border-width: 0 0 0 0.5em; padding-left: 0.2em; border-style: solid;&quot;
+  class=&quot;movedata-icon border-green balcony-break&quot;
+&gt;Balcony break&lt;/div&gt;
+* Chip damage on block&lt;/div&gt;"
+"Bryan-f,F+3","Slash Kick &gt; Snake Eyes","f,F+3",,25,m,,,,i24~25,,,,-13,"+28a (-8)","+39a (-8)","&lt;div class=&quot;plainlist&quot;&gt;
+* 
+&lt;div
+  style=&quot;display: block; border-width: 0 0 0 0.5em; padding-left: 0.2em; border-style: solid;&quot;
+  class=&quot;movedata-icon border-green balcony-break&quot;
+&gt;Balcony break&lt;/div&gt;
+* Gain SE on hit with 1+2
+* Chip damage 7 (28%) on block&lt;/div&gt;"
+"Bryan-f,F+3*",,"f,F+3*",,33,m,,,,i34~35,,,,+8,+71a,,"&lt;div class=&quot;plainlist&quot;&gt;
+* 
+&lt;div
+  style=&quot;display: block; border-width: 0 0 0 0.5em; padding-left: 0.2em; border-style: solid;&quot;
+  class=&quot;movedata-icon border-green balcony-break&quot;
+&gt;Balcony break&lt;/div&gt;
+* Gain SE on hit with 1+2
+* Chip damage 9 (27%) on block
+* Wall Crush on block&lt;/div&gt;"
+"Bryan-f,F+4","Mach Kick","f,F+4",,32,h,,,,i16~19,,,,-9,"[[Bryan combos#Mini-combos|+15a]]",,"&lt;div class=&quot;plainlist&quot;&gt;
+* 
+&lt;div
+  style=&quot;display: block; border-width: 0 0 0 0.5em; padding-left: 0.2em; border-style: solid;&quot;
+  class=&quot;movedata-icon border-blue homing&quot;
+&gt;Homing&lt;/div&gt;
+* Chip damage 9 (28%) on block&lt;/div&gt;"
+"Bryan-f,f,F+3","Snake Slash","f,f,F+3",,30,m,,,,i22~25,,,,+6,"+13a (+3)",,"Chip damage 9 (30%) on block"
+"Bryan-f,n,b+2","Mach Kick","f,n,b+2",,20,h,,,,i14~15,,,,-7,"[[Bryan combos#Staple|+43a (+33)]]",,"&lt;div class=&quot;plainlist&quot;&gt;
+* 
+&lt;div
+  style=&quot;display: block; border-width: 0 0 0 0.5em; padding-left: 0.2em; border-style: solid;&quot;
+  class=&quot;movedata-icon border-red tornado&quot;
+&gt;Tornado&lt;/div&gt;&lt;/div&gt;"
