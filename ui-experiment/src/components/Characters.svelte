@@ -1,5 +1,5 @@
-<script context="module">
-	export const characters = {
+<script context="module" lang="ts">
+	export const characters: { [key: string]: string } = {
 		akuma: 'Akuma',
 		alisa: 'Alisa',
 		anna: 'Anna',

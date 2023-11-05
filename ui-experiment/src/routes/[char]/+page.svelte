@@ -1,9 +1,13 @@
 <script lang="ts">
 	import FrameDataDisplay from '../../components/FrameDataDisplay.svelte';
-	export let data;
+	import { characters } from '../../components/Characters.svelte';
+	import type { CsvData } from '../../types/csvData.type';
+
+	export let data: CsvData;
+	let charName = characters[data.character];
 </script>
 
 <main>
-	<h1>CSV Table Viewer</h1>
-	<FrameDataDisplay {data} />
+	<h1>{charName} Frame Data</h1>
+	<FrameDataDisplay data={data} />
 </main>

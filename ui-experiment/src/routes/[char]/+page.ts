@@ -18,6 +18,7 @@ export async function load({ fetch, params }) {
 		const csvData = result.data as Move[];
 
 		return {
+			character: params.char,
 			csvData: csvData,
 			csvHeader: csvHeader
 		} as CsvData;
