@@ -5,11 +5,11 @@
 <div class="container mx-auto my-auto h-screen w-screen">
 	<h1 class="font-serif text-3xl font-bold underline text-center pb-14">Characters</h1>
 
-	<div class="grid grid-cols-5 gap-x-0 gap-y-4 justify-center place-items-center px-96">
+	<div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5  gap-x-0 gap-y-4 justify-center place-items-center">
 		{#each Object.entries(characters) as [char_key, char_name]}
 			<a href="/{char_key}">
 				<div
-					class="flex flex-col items-center justify-center rounded-lg shadow-lg hover:bg-zinc-200"
+					class="flex flex-col items-center justify-center rounded-lg shadow-lg hover:shadow-xl hover:bg-red-100"
 				>
 					<div class="p-2">
 						<img
